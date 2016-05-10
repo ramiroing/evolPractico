@@ -1,0 +1,6 @@
+JDK
+http://download.oracle.com/otn-pub/java/jdk/7u79-b15/jdk-7u79-windows-x64.exe
+eclipse
+https://www.eclipse.org/downloads/download.php?file=/oomph/epp/mars/R2/eclipse-inst-win64.exe
+
+https://github.com/ramiroing/evolPractico.git
