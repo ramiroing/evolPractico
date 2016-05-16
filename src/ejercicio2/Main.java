@@ -8,33 +8,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
-
-	
-	
-	static Double[][] LeerInstancia(String archivo) throws FileNotFoundException, IOException {
-	      String cadena;
-	      FileReader f = new FileReader(archivo);
-	      BufferedReader b = new BufferedReader(f);
-	      ArrayList<Double[]> lines = new ArrayList<Double[]>();
-	      while((cadena = b.readLine()) != null) {
-	    	  String[] parts = cadena.split(" ");
-	    	  Double[] values = new Double[parts.length];
-	    	  for ( int i=0 ; i < parts.length ; i++ )
-	    		  values[i] = Double.parseDouble(parts[i]);
-	    	  lines.add(values);
-	      }
-	      b.close();
-	      f.close();
-	      return lines.toArray( new Double[lines.size()][] );
-	}
-	
 	
 	public static void main(String[] args) {
 		
 		try {
-			Double[][] DATA_INSTANCE = LeerInstancia("ejemplo.txt");
+			Double[][] CITIES_INSTANCE = DataManager.GetCities();
+			int[][] SEASONS_INSTANCE = DataManager.GetSeasons();
 			
-			System.out.println(DATA_INSTANCE[1][1]);
+			System.out.println(SEASONS_INSTANCE[1][1]);
 			
 			
 			
